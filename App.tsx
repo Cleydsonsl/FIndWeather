@@ -1,7 +1,12 @@
 import React from 'react';
-import {ThemeProvider} from 'styled-components';
-import theme from './src/themes';
+import { ThemeProvider } from 'styled-components/native';
+import { Welcome } from './src/components/template/Welcome';
+import themes from './src/themes';
 
-export function App() {
-  return <ThemeProvider theme={theme}></ThemeProvider>;
-}
+export const App = () => {
+  return (
+    <ThemeProvider theme={themes}>
+      <Welcome  />
+    </ThemeProvider>
+  );
+};
