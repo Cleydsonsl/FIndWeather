@@ -1,2 +1,2 @@
 export {Text} from './Text';
-export {Button} from './Button';
+export {Button} from './Button/Index';
