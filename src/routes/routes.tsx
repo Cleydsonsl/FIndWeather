@@ -11,7 +11,7 @@ export const Routes = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Welcome" component={WelcomeScreen} />
+      <Stack.Screen name="Welcome" component={(props: any) => <WelcomeScreen {...props}/>} />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

@@ -15,6 +15,7 @@ interface IButtonMoleculeProps {
   borderColor?: string;
   borderWidth?: string | number;
   padding?: string | number;
+  onPress?: Function;
 }
 
 export const Button = ({
@@ -30,6 +31,7 @@ export const Button = ({
   borderColor,
   borderWidth,
   padding,
+  onPress
 }: IButtonMoleculeProps) => {
   return (
     <ButtonAtom
@@ -39,7 +41,9 @@ export const Button = ({
       borderRadius={borderRadius}
       borderColor={borderColor}
       borderWidth={borderWidth}
-      padding={padding}>
+      padding={padding}
+      onPress={onPress}
+    >
       <Text
         text={text}
         color={color}

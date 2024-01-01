@@ -13,6 +13,7 @@ export interface IButtonProps {
   borderColor?: string;
   borderWidth?: string | number;
   padding?: string | number;
+  onPress?: Function;
 }
 
 export const Container = styled(RectButton)<IButtonProps>`

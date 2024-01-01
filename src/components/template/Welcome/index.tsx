@@ -5,7 +5,7 @@ import {Button, BoxText} from '../../molecule';
 import {Container, Content} from './styles';
 import themes from '../../../themes/index';
 
-export const Welcome = () => {
+export const Welcome = ({navigation}: any) => {
   return (
     <Container>
       <Content>
@@ -34,6 +34,7 @@ export const Welcome = () => {
           borderColor={themes?.colors?.gray_300}
           background={themes?.colors?.dark_300}
           color={themes?.colors?.white}
+          onPress={() => navigation.navigate('Home')}
         />
       </Content>
     </Container>
