@@ -6,9 +6,10 @@ export const Container = styled.SafeAreaView`
   background: ${themes?.colors?.dark};
 `;
 
-export const Content = styled.View`
+export const Content = styled.View.attrs<any>({
+  paddingHorizontal: 20
+})`
   flex: 1;
   align-items: center;
   justify-content: space-evenly;
-  padding-horizontal: 20px;
 `;
