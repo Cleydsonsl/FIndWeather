@@ -27,7 +27,7 @@ export const Welcome = ({navigation}: any) => {
         />
         <Button
           text="Iniciar"
-          padding={15}
+          padding={'15px'}
           borderWidth={1}
           borderRadius={18}
           fontSize={22}

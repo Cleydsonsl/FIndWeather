@@ -7,6 +7,7 @@ export interface ITextProps {
   color?: string | 'white' | 'dark';
   type?: 'bold' | 'semiBold' | 'small';
   align?: string | 'center' | 'left';
+  textDecoration?: string
 }
 
 export const Container = styled.Text<ITextProps>`
@@ -15,4 +16,5 @@ export const Container = styled.Text<ITextProps>`
   font-weight: ${props =>
     props.type === 'bold' ? 700 : props.type === 'semiBold' ? 600 : 400};
   text-align: ${props => (props.align === 'center' ? 'center' : 'left')};
+  text-decoration-line: ${props => (props.textDecoration || 'none')};
 `;
