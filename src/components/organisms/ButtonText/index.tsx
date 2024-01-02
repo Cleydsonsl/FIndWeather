@@ -9,7 +9,7 @@ interface IButtonTextProps {
   color: string;
   type: string;
   textDecoration?: string;
-  padding?: string;
+  padding?: string | number;
 }
 
 export function ButtonText({text, onPress, color, alignItems, align, fontSize, type, textDecoration, padding}: IButtonTextProps) {

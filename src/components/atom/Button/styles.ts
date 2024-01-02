@@ -24,5 +24,5 @@ export const Container = styled(RectButton)<IButtonProps>`
   border-radius: ${props => props.borderRadius || 0}px;
   border-color: ${props => props.borderColor || themes?.colors?.gray_100};
   border-width: ${props => props.borderWidth || 0}px;
-  padding: ${props => props.padding || 'none'};
+  padding: ${props => props.padding || 0}px;
 `;

@@ -33,7 +33,7 @@ export function EmpityScreen() {
         alignItems="center"
         align="center"
         textDecoration="underline"
-        padding="0"
+        padding={0}
       />
 
     </Container>
